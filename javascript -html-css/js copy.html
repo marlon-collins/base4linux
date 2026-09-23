@@ -1,0 +1,88 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript - Treinamento</title>
+</head>
+
+<body>
+
+    <h1>Aqui vamos treinar JavaScript</h1>
+    <p> Vamos estudar:for, while, do while, for in e for of. </p>
+
+    <div>
+        <nav>
+            <ul>
+                <li id="menu11"> </li>
+            </ul>
+        </nav>
+    </div>
+
+    <p id="teste"></p>
+
+
+
+    <script>
+
+        // function chamarMenu() {
+
+        //     const catalogo = ["filmes","animes","mangas","series","HQS","podcast"];
+
+        //     let menu = "";
+
+        //     for (let i = 0; i < catalogo.length; i++) {
+
+        //         menu += "<li>" + catalogo[i] + "</li>";
+        //     }
+
+        //     document.getElementById("menu11").innerHTML = menu;
+
+        // }
+        
+        function criaMenu () {
+             const catalogo = ["filmes","animes","mangá"];
+            let menu = "";
+            for (let item of catalogo){
+              menu+= "<li>" + item + "</li>";
+            }
+          return menu;
+            }
+        document.getElementById("menu11").innerHTML = menu;
+        console.log(criaMenu());
+        
+        
+    // //     function criaMenu() {
+
+    // //     const catalogo = ["filmes", "animes", "mangá"];
+
+    // //     let menu = "";
+
+    // //     for (let item of catalogo) {
+    // //     menu += "<li>" + item + "</li>";
+    // //     }
+
+    // //     return menu;
+    // //     }
+
+    // // document.getElementById("menu11").innerHTML = criaMenu();
+
+    // console.log(criaMenu());
+
+
+       
+
+    </script>
+
+
+
+
+
+    <footer>
+        <p>Rodapé</p>
+    </footer>
+</body>
+</html>

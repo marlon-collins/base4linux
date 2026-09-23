@@ -1,0 +1,130 @@
+Treinando JavaScript aqui tem todas as nossas cagadas e tentativas e erros vamos deixar outro arquivo polido e organizado
+
+<!DOCTYPE html>
+<html lang="pe-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JAVA SCRIPT </title>
+</head>
+
+<body>
+    <h1> AQUI VAMOS TREINAR JAVASCRIPT </h1>
+    <p> VAMOS VER for, while, do while, for in, for of </p>
+    <div>
+        <nav>
+            <ul>
+                <li id="menu11" class="menu-teste"> </li>
+            </ul>
+        </nav>
+    </div>
+    <p id="teste"> </p>
+
+
+
+
+
+
+    
+    <script>
+// const menu = ["pagina4", "pagina5","pagina6"];
+// let menu2 = [];
+
+// function chamaMenu (n) {
+//    for (let i = 0; i < menu.length;i++)
+//    menu2 += menu[i] + "<li>" + "</li>";
+//    return menu2
+//}
+//let elemento = document.getElementById(menu1).innerHTML
+
+
+
+
+
+//     let i = 5;
+// for (let i = 0; i < 10; i++) {
+//   // some statements
+// }
+// document.getElementById("teste").innerHTML = i;
+
+
+
+// const menu1 = ["pagina1", "pagina2","pagina3"];
+// let menu2 = [];
+// for (let i = 0; i < menu1.length;i++) {
+//     menu2 += menu1[i] + " - ";
+// }
+// console.log(menu2);
+
+// const flores = ["rosas", "tulipas","magueridas","orquideas"];AQUI DEU ERRADO.
+// let buque = ["buque de"];
+
+// for (let i = 0; i< flores.length; i++) {
+//     buque.push (" - " + flores[i]);
+
+// }
+// console.log(buque);
+
+
+// const flores = ["rosas", "tulipas", "margaridas", "orquideas"]; LEMBREI DE USAR O PONTO PUSH QUE ADICIONA NOVOS ELEMENTOS NO ARRAY UMA DAS FUNÇÕES DE NAVEGAÇÃO DE ARRAYS
+// let buque = []; 
+
+// for (let i = 0; i < flores.length; i++) {
+//     buque.push("buque de " + flores[i]);
+// }
+
+// console.log(buque);
+
+
+// const menu = ["pagina1", "pagina2","pagina3"];TA ERRADO POR ENQUANTO
+// let menu1 = [];
+// for(let i =0; i < menu.length; i++) {
+//     menu1 += "<li>" + menu[i] + "</li>";
+// }
+// document.getElementById(menu11)- aqui dentro do parenteses nos referimos ao menu1 que esta dentro de uma div e com a ul id = menu1.innerHTML = menu1;
+// MAS TERIAMOS QUE 
+
+
+
+// function chamarMenu() {
+
+// const catalogo = ["filmes", "animes", "mangas", "series", "HQS", "podcast"];
+// let menu = "";
+// for (let i = 0; i < catalogo.length; i++) {
+//     menu += "<li>" + catalogo[i] + "</li>";
+// }
+
+// document.getElementById("menu11").innerHTML = menu;
+
+// }
+
+//criando menu com for in
+// function criarMenu () {
+//     const catalogo = ["filmes", "animes", "mangás"];
+//     let menu = [];
+    
+//     for(let item of catalogo) {
+//         menu.push(item);
+//     } 
+// }
+
+function criaMenu () {// AQUI DESCOBRIMOS QUE O LOO FOR OF PERCORRE O ARRAY E MOSTRA SEU VALOR NÃO SUA POSIÇÃO COMO NO IN, PRECISAMOS DECLARAR ASSIM COMO NO FOR NORMAL
+        const catalogo = ["filmes","animes","mangá"];
+    let menu = "";
+    for (let item of catalogo){
+        menu+= "<li>" + item + "</li>";
+    }
+    return menu;
+    }
+document.getElementById("menu11").innerHTML = menu;
+console.log(criaMenu());
+
+
+
+
+</script>
+<footer>  RODAPÉ  </footer>
+
+</body>
+</html>

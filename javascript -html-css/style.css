@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+}
+/* HEADER */
+
+header {
+    background-color: #0000CD;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: aliceblue;
+}
+
+/*create two coluns/boxes that floats next each other , anotação interessante se não definirmos o que cada boloco irá ocupar o próprio browser define quem sobreõe quem é nesecessario definir as caixar e seus tamanhos e larguras em porcentagem pois a paginaninteira temum limite.*/
+
+nav {
+    
+    flex: 1 1 30%;
+    width: 30%;
+    height: 442px;
+    background: linear-gradient(#1E90FF,#6495ED, #00BFFF );
+    padding: 22px;
+    display: flex;
+}
+
+/* LISTAS MENU */
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    flex: 1 1 70%;
+    padding: 39px;
+    min-width: 300px;
+    background-color: #B0C4DE;
+    min-height: 300px;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: inherit;
+
+
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: #20B2AA;
+    padding: 10px;
+    text-align: center;
+    color: white;
+
+
+}
+
+/* OPÇÕES DO MENU TABELAS VERDADE */
+.negacao{     
+            width:100%;
+            border-collapse: collapse;
+
+        th, td {
+            border: 2px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+    }
+.disjuncao{              
+            width:100%;
+            border-collapse: collapse;
+       
+        th, td {
+            border: 2px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+}
+
+.conjuncao{           
+            width:100%;
+            border-collapse: collapse;
+        
+        th, td {
+            border: 3px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+}
+
+
+@media (max-width: 600px) {
+    nav,article {
+        width: 100%;
+        height: auto;
+    }
+    header h2 {
+        font-size: 20px;
+    }
+    p, li {
+        font-size: 14px;
+    }
+}
